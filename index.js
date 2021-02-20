@@ -43,13 +43,7 @@ const promptUser = () => {
         {
             type: 'list',
             message: 'Choose a license for your project.',
-            choices: ["Apache",
-                "Academic",
-                "GNU",
-                "ISC",
-                "MIT",
-                "Mozilla",
-                "Open"],
+            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPL...v3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
             name: 'license'
         },
         {
@@ -66,12 +60,12 @@ const promptUser = () => {
 };
 
 // write README file use the fs.writeFile package
-function writeToFile(fileName, data) {
+function writeToFile(fileName, data) { 
     return writeFileAsync(fileName, data);
 }
 
 // Create a function to initialize app using async and try
-async function init() {
+async function init() { 
     try {
         //Ask user questions and generate responses
         const answers = await promptUser();
@@ -81,7 +75,7 @@ async function init() {
         await writeToFile('./dist/README.md', generateContent);
         console.log('Successfully wrote to README.md');
     }
-    catch (err) {
+    catch(err) {
         console.log(err);
     }
 };
