@@ -22,11 +22,6 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            message: 'Write your table contents if your README is very long. (Optional)',
-            name: 'tableOfContents',
-        },
-        {
-            type: 'input',
             message: 'What are the steps required to install your project if any?',
             name: 'installation',
         },
@@ -37,13 +32,13 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            message: 'What guidelines do you have have for other developers contributing to your project? ',
-            name: 'contribution'
+            message: 'Who is contributing to this project',
+            name: 'contributing'
         },
         {
             type: 'input',
             message: 'Please provide example(s) of how to run test for your project.',
-            name: 'test'
+            name: 'tests'
         },
         {
             type: 'list',
@@ -77,7 +72,7 @@ async function init() {
         const generateContent = generateMarkdown(answers);
 
         //Call writeToFile function to write new README.md file 
-        await writeToFile('README.md', generateContent);
+        await writeToFile('./dist/README.md', generateContent);
         console.log('Successfully wrote to README.md');
     }
     catch(err) {
