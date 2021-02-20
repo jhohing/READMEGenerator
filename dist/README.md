@@ -17,7 +17,7 @@
   - [Questions](#questions)
 
   ## Installation
-    npm install inquirer is required
+    npm install inquirer
 
   ## Usage
     Rutgers Coding Bootcamp homework assignment
@@ -28,9 +28,9 @@
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
   
   <br />
-  This application is covered by the [MIT](
-  https://choosealicense.com/licenses/MIT/
-  ) license.
+  
+  This application is covered by the MIT license.
+  
   
 
   ## Contributing
