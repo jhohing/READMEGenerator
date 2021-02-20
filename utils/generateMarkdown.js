@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   return `
-  [${license}](https://choosealicense.com/licenses/${license}/)
+  https://choosealicense.com/licenses/${license}/
   `
 }
 
@@ -20,7 +20,7 @@ function renderLicenseSection(license) {
   return `
   ${renderLicenseBadge(license)}
   <br />
-  This application is covered by the ${renderLicenseLink(license)} license.
+  This application is covered by the [${license}](${renderLicenseLink(license)}) license.
   `
 }
 

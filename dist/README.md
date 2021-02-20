@@ -1,11 +1,11 @@
 # README Generator
 
   
-  ![badge](https://img.shields.io/badge/license-MIT License-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
    <br />
 
   ## Description
-    A node.js application creates a README.md file
+    A node.js application creates a README.md file in the dist directory
 
   ## Table of Contents
   - [Description](#description)
@@ -25,12 +25,12 @@
   ## License
   
   
-  ![badge](https://img.shields.io/badge/license-MIT License-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
   
   <br />
-  This application is covered by the 
-  [MIT License](https://choosealicense.com/licenses/MIT License/)
-   license.
+  This application is covered by the [MIT](
+  https://choosealicense.com/licenses/MIT/
+  ) license.
   
 
   ## Contributing
