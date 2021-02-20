@@ -1,9 +1,15 @@
-// fs is a Node standard library package for reading and writing files
+//required packages
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require('util');
+const generateMarkdown = require('./utils/generateMarkdown');
+const writeFileAsync = util.promisify(fs.writeFile);
 
-inquirer
-    .prompt([
+
+
+// prompt user will use the inquirer package to prompt users with a series of questions
+const promptUser = () => {
+    return inquirer.prompt([
         {
             type: 'input',
             message: 'What is the title of your project?',
@@ -55,22 +61,30 @@ inquirer
             message: 'What is your email address?',
             name: 'email'
         }
-    ])
-    .then((response) => {
-        console.log(response);
-        if (response.animal === "Peter") {
-            console.log("You have chosen the correct animal!!");
-        }
-        if (response.section === "Installation") {
-            // * [Installation](#installation)
-            fs.writeFile("file.txt", "* [Installation](#installation)", (err) => {
-                if (err) console.error(err);
-                console.log("Written to file...");
-            });
-        }
+    ]);
+};
 
-        response.confirm === response.password
-            ? console.log('Success!')
-            : console.log('You forgot your password already?!')
-    });
+// write README file use the fs.writeFile package
+function writeToFile(fileName, data) { 
+    return writeFileAsync(fileName, data);
+}
+
+// Create a function to initialize app using async and try
+async function init() { 
+    try {
+        //Ask user questions and generate responses
+        const answers = await promptUser();
+        const generateContent = generateMarkdown(answers);
+
+        //Call writeToFile function to write new README.md file 
+        await writeToFile('README.md', generateContent);
+        console.log('Successfully wrote to README.md');
+    }
+    catch(err) {
+        console.log(err);
+    }
+};
+
+// Function call to initialize app
+init();
 
