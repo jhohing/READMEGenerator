@@ -1,11 +1,11 @@
 # README Generator
 
   
-  ![badge](https://img.shields.io/badge/license-MIT License-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
    <br />
 
   ## Description
-    A node.js app that creates a README.md file in the dist directory
+    A node.js application that creates a README.md for a project in the dist directory
 
   ## Table of Contents
   - [Description](#description)
@@ -20,12 +20,12 @@
     npm install inquirer is required
 
   ## Usage
-    Rutgers Coding Bootcamp Homework assignment
+    Rutgers Coding Bootcamp homework assignment
 
   ## License
   
   
-  ![badge](https://img.shields.io/badge/license-MIT License-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
   
   <br />
   This application is covered by the function renderLicenseLink(license) {
