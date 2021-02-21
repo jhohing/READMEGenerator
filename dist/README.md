@@ -5,7 +5,7 @@
    <br />
 
   ## Description
-    A node.js application creates a README.md file in the dist directory
+    A node.js application that creates a README.md file for the user repository in the dist directory
 
   ## Table of Contents
   - [Description](#description)

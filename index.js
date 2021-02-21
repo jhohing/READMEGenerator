@@ -32,7 +32,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            message: 'Who is contributing to this project',
+            message: 'Who is contributing to this project?',
             name: 'contributing'
         },
         {
