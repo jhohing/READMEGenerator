@@ -5,9 +5,9 @@ A node.js applications that prompts the users using the inquirer package and use
 
 Below is the gif of the application:
 
-![README Generator] (./assets/jhohing-README-Generator.gif)
+![README Generator](./assets/jhohing-README-Generator.gif)
 
-[Here] (./assets/jhohing-README-Generator.webm) is the full video show the functionality of the application
+[Here](./assets/jhohing-README-Generator.webm) is the full video show the functionality of the application
 
 ## User Story
 
