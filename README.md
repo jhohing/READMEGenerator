@@ -7,9 +7,7 @@ Below is the gif of the application:
 
 ![README Generator](./assets/jhohing-README-Generator.gif)
 
-[Here](./assets/jhohing-readme-generator.webm) is the full video show the functionality of the application
-
-[MP4 link](./assets/jhohing-readme-generator.mp4)
+[Here](./assets/jhohing-readme-generator.mp4) is the full video show the functionality of the application
 
 ## User Story
 
